@@ -1,0 +1,20 @@
+name: Check code
+
+# When to run
+on:
+  push:
+    branches:
+      - main
+
+# WHat jobs to do
+jobs:
+  test:
+    name: Check code
+    runs-on: ubuntu-latest
+    steps:
+      - name: CHeckout Repo
+      uses: action/checkout@master
+      - name: Install dependencies
+      run: npm install
+      - name: Run tests
+      run: npm test
