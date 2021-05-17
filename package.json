@@ -4,7 +4,8 @@
   "description": "A place to test some GitHub actions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
