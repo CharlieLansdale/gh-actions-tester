@@ -12,9 +12,9 @@ jobs:
     name: Check code
     runs-on: ubuntu-latest
     steps:
-      - name: CHeckout Repo
-      uses: action/checkout@master
+      - name: Checkout Repo
+        uses: action/checkout@master
       - name: Install dependencies
-      run: npm install
+        run: npm install
       - name: Run tests
-      run: npm test
+        run: npm test
